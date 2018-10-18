@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" style="text/css">
+    <link rel="stylesheet" href="css/styles.css" style="text/css">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <form id="formInfo">
+      <div id="numberOneDiv" class="form-group">
+        <label class="control-label" for="numberOneInput">Input Number</label>
+        <input type="number" class="form-control" id="numberOneInput">
+      </div>
+      <div id="numberTwoDiv" class="form-group">
+        <label class="control-label" for="numberTwoInput">Input Number</label>
+        <input type="number" class="form-control" id="numberTwoInput">
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="add" checked>
+          Add
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="subtract">
+          Subtract
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="multiply">
+          Multiply
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="divide">
+          Divide
+        </label>
+      </div>
+      <button id="submitbutton" type="submit" class="btn btn-info btn-lg">Calculate</button>
+    </form>
+    <div>
+    <span id="output"></span>
+    </div>
+  </body>
+  <script src="js/jquery-3.3.1.js"> </script>
+  <script src="js/scripts.js"> </script>
+</html>
